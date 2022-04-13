@@ -107,9 +107,10 @@ import Tabla from "../components/Tabla"
         return ()=>clearInterval(refresher)
      },[token])//eslint-disable-line
 
+     // show an Error and delete it after 7 secs
      useEffect(()=>{
          if (!error) return
-         const errTimeout = setTimeout(()=>setError(""), 70000)
+         const errTimeout = setTimeout(()=>setError(""), 7000)
          return ()=>clearTimeout(errTimeout)
      }, [error])
 
