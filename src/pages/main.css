@@ -1,0 +1,62 @@
+.main-container {
+    display: flex;
+}
+
+.form-container {
+    border: 1px solid black;
+    flex-flow: row nowrap;
+    width: 50%;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px;
+}
+
+.form-input {
+    margin-top: 10px;
+}
+
+.botton-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.botton-save{
+    margin: 0px 20px; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.botton-reset{
+    margin: 0px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.botton-reset:hover{
+    background: red;
+    color: white;
+}
+
+.table-container {
+    border: 1px solid black;
+    margin: auto auto;
+    padding: 35px 35px;
+
+    text-align: center;
+
+}
+
+.header-table {
+    background: hsla(50, 50%, 50%, 0.3);
+   
+}
+
+.cell-header{
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+.table-row:nth-child(2n) {
+    background: hsla(50, 50%, 50%, 0.1);
+}
